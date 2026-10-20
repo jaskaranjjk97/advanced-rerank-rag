@@ -2,7 +2,6 @@ from app.parsers import load_pdfs
 
 
 def main():
-    # MUST have parentheses!
     docs = load_pdfs()
 
     text_docs = [d for d in docs if d.metadata["type"] == "text"]
