@@ -1,0 +1,40 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments (Huge, don't copy to image)
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables (SECURITY: Never bake secrets into the image)
+.env
+.env.*
+
+# Git and IDE files
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Tests and Docs (Not needed at runtime)
+tests/
+docs/
+README.md
+data/extracted_images/
+
+# Docker files themselves (Not needed inside the image)
+Dockerfile
+Dockerfile.ui
+docker-compose.yml
+.dockerignore
+
+# Local logs
+logs/
+*.log

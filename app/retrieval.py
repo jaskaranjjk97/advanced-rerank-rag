@@ -17,7 +17,7 @@ def _tokenize(text: str) -> list[str]:
     return text.lower().split()
 
 
-def _build_bm25_index(docs: list[Document]):
+def build_bm25_index(docs: list[Document]):
     """create a bm25 index for keyword serach."""
     global _bm25_index, _bm25_docs
     _bm25_docs = docs
@@ -72,5 +72,5 @@ def hybrid_retrieval(query: str, k: int = 20) -> list[Document]:
             doc_map[key] = doc
 
     # Sort by RRF score and return top k
-    fused = sorted(rrf_scores.item(), key=lambda x: x[1], reverse=True)
+    fused = sorted(rrf_scores.items(), key=lambda x: x[1], reverse=True)
     return [doc_map[key] for key, _ in fused][:k]

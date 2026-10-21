@@ -52,3 +52,4 @@ Thumbs.db
 logs/
 *.log
 data/processed/
+data/extracted_images/
