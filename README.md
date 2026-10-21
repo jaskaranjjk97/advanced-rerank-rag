@@ -31,11 +31,11 @@ This project implements a **2-Stage Advanced RAG Pipeline**:
 ## Screenshots
 
 ### The UI & Final Answer
-![Final Answer](docs/03-final-answer.png)
+![Final Answer](docs/03-final-response.png)
 *The agent extracts precise figures (₹42.70 lakh crore) and cites both the text and the image caption.*
 
 ### The "Wow" Factor: Stage 1 vs Stage 2
-![Stage Comparison](docs/04-stage-comparison.png)
+![Stage Comparison](docs/04-comparison.png)
 *Left: Stage 1 Hybrid Search returns messy, topically similar text. Right: Stage 2 Cross-Encoder instantly pushes the correct table (`Score: 5.21`) to the #1 spot.*
 
 ### FastAPI Backend
